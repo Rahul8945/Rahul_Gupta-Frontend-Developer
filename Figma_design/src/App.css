@@ -42,7 +42,7 @@
   color: #888;
 } */
 
-.header{ 
+.header,.about{ 
 font-family: "Space Grotesk", sans-serif;
 }
 
@@ -80,4 +80,11 @@ font-family: "Space Grotesk", sans-serif;
     0px 4px 6px 0px #37C5E51F,
     0px 1px 4px 0px #37C5E51F;
   }
+}
+
+.box_border {
+  border:6px solid #0E8B9A;
+  border-radius: 16px
+  
+ 
 }
