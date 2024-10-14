@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
 import mobilelogo from "../assets/mobilelogo.png";
+import gradientColor from "../assets/gradient.png"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="header relative w-screen h-screen overflow-hidden h-[700px] xs:">
+      <div className="header relative w-screen h-screen overflow-hidden h-[700px] xxs:h-[700px] ">
         {/* Background video */}
         <video
           autoPlay
@@ -41,7 +42,7 @@ const Header = () => {
         {/* Content to overlay on the video */}
         <div className="h-[24px] bg-[linear-gradient(180deg,#00161D_0%,rgba(0,22,28,0.2)_100%)] relative z-10"></div>
 
-        <div className="relative z-10 flex justify-between items-center h-auto text-white  font-space-grotesk px-6 xs:bg-[#0C2B2FB2] sx:text-[#B0FAFFB2] xs:backdrop-blur-[10px] xs:inset-0 xs:bg-opacity-30 xs:h-[64px] xs:mx-[9.75px] xs:rounded-[48px] xs:border xs:border-[#0F373C] ">
+        <div className="relative xs:fixed z-10 flex justify-between items-center h-auto text-white  font-space-grotesk px-6 xs:bg-[#0C2B2FB2] sx:text-[#B0FAFFB2] xs:backdrop-blur-[10px] xs:inset-0 xs:bg-opacity-30 xs:h-[64px] xs:mx-[9.75px] xs:rounded-[48px] xs:border xs:border-[#0F373C] ">
           {/* Logo */}
           <img
             src={isMobile ? mobilelogo : logo}
@@ -112,6 +113,7 @@ const Header = () => {
         >
           Open dApp
         </button>
+        <img src={gradientColor} alt="" className="absolute bottom-0 z-10 w-full h-auto bottom-[-1px] " />
 
         {/* Mobile Navigation */}
         {isOpen && (

@@ -2,12 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-#whitepaper {
- border: 2px solid white;
- color: black; 
- border-radius: 15px;
- background-color: #CDFCFF;
- padding: 12px 24px;
- 
-    
+body{
+  background-color: #00161c;
+  overflow-x: hidden
+}
+.bg-multiple-gradients {
+  background: #00161c;
 }
